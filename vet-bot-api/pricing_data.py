@@ -11,7 +11,7 @@ def get_pricing_example(key, item):
     return None
 
 pricing_data = {}
-with open("pricing.json") as f:
+with open("vet-bot-api/pricing.json") as f:
     pricing_data = json.load(f)
     for key in list(pricing_data.keys()):
         if not pricing_data[key].get("price"):
